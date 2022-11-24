@@ -1,0 +1,42 @@
+@import "_var.scss";
+
+body {
+    background-color: $bg;
+    font-family: 'Manrope', sans-serif;
+    flex-direction: column;
+    margin: 5rem;
+    
+    #card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $card;
+        border-radius: 0.75rem;
+        color: $cyan;
+        padding: 2rem;
+        margin-top: 10rem;
+        min-width: 80%;
+       #adviceNum {
+        color: $neonGreen;
+       }
+
+       #adviceText {
+        margin: 1rem;
+       }
+    }
+  
+    #cardBtnContainer {
+        display: grid;
+        justify-items: center;
+        // grid-template-rows: repeat(3, 10rem);
+        // grid-template-columns: repeat(12, auto);
+        #diceContainer {
+            background-color: $neonGreen;
+            border-radius: 50%;
+            max-width: 3rem;
+            max-height: 1.5rem;
+            padding: 1rem;
+
+        }
+    }
+}
